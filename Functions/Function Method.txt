@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+//type name   parameters ending semicolons
+
+void updating(int& , int&); //function prototyping 
+
+int main ()
+{ //body of main 
+    updating (a , b); //function call
+} 
+
+
+// function defination 
+
+void updating(int& x, int& y) //header of function 
+
+{  //body of function 	
+   x=x+3;
+   y=y+3;
+}

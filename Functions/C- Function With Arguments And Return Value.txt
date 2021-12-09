@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int sqr (int);
+int main ()
+{
+	int a,ans;
+	cout<<"Enter Number To Make Squre : ";
+	cin>>a;
+	sqr(a);
+	return 0;
+} 
+
+int sqr (int x)
+{	
+	int z;
+	z=x*x;
+	cout<<"Squre Calculated From Function :"<<z<<endl;
+	return z;
+}

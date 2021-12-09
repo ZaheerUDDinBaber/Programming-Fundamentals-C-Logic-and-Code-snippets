@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+void updating(int& , int&);
+int main ()
+{
+	int a,b;
+	cout<<"Enter Value Of A :";
+	cin>>a;
+    cout<<"Enter value of b :";
+	cin>>b;
+	cout<<endl;
+	cout<<"Before updating "<<endl;
+	cout<<"A :"<<a<<endl;
+	cout<<"B :"<<b;
+	cout<<endl;
+	
+	cout<<"After updating ";
+    updating (a , b);
+	cout<<"After swpping "<<endl;
+	cout<<"A :"<<a<<endl;
+	cout<<"B :"<<b;
+	return 0;
+} 
+void updating(int& x, int& y)
+{	
+   x=x+3;
+   y=y+3;
+}

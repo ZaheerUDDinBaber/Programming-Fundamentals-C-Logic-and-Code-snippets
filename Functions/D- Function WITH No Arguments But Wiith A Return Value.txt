@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int add (void);
+int main ()
+{
+	int ans;
+	ans= add();
+	return 0;
+} 
+
+int add (void)
+{	
+    int a,b;
+	cout<<"//We Are IN Function's Body//"<<endl;
+	cout<<"Enter Number : A ";
+	cin>>a;
+	cout<<"Enter Number : B ";
+	cin>>b;
+	int z=a+b;
+	cout<<"Addition Calculated From Function : "<<z<<endl;
+	return z;
+}
