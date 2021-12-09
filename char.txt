@@ -1,0 +1,32 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+     string a,c;
+     
+     int b,d;
+
+    cout<<"type your name"<<endl;  
+    cin>>a;
+    
+    cout<<"enter your age"<<endl;
+    cin>>b;
+    
+    cout<<"enter your subjects"<<endl;
+    cin>>c;
+    
+    cout<<"Enter total marks"<<endl;
+    cin>>d;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+		return 0;
+}

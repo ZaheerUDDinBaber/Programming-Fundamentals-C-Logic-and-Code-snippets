@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int main()
+
+{
+	float gpa;
+	cout<<"Kindly Enter The GPA To Find Grades Status "<<endl;
+	cin>>gpa;
+	
+	if  (gpa>=2.0)
+	
+	{
+			if  (gpa>3.8)
+			cout<<"Dean Rector Award Rewarded Because GPA Is Greater Than 3.8"<<endl;
+			
+			else if (gpa>3.2)
+			cout<<"Student Is Awarded Gold Shild"<<endl;
+			
+			else if (gpa>2.7)
+			cout<<"Student Is Awarded Silver Shield"<<endl;
+			
+			
+			
+			
+	             else
+	             cout<<"Student is Pass With Avarage Numbers But Below 2.7 "<<endl;
+	        
+    }
+	
+	         else
+	
+	         cout<<"Student Didn't Scored Avarage GPA So He Or She Is Fail"<<endl;
+	
+	
+	
+	
+	return 0;
+	
+}

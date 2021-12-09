@@ -1,0 +1,25 @@
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+using namespace std;
+int main()
+
+{	
+	
+	int a,b,result;
+	cout<<"Enter Two Numbers ; A Stand As Target & B To Give Power "<<endl;
+	cout<<"A : ";
+	cin>>a;
+	cout<<"B : ";
+	cin>>b;
+	
+	result= pow (a,b);
+	
+	cout<<"Result :";
+	cout<<result;
+
+	
+	return 0;
+		
+	
+}

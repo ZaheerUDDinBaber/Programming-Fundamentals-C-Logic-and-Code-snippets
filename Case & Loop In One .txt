@@ -1,0 +1,56 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	
+	char gender;
+	int number,age;
+	cout<<"This Is A Programme To Calculate Income Of Males Or Female Per Day According To Their Age"<<endl<<endl;
+	cout<<"Press 1 For Male & 2 For Female                            "<<endl;
+	cout<<"---------------------------------------------------------------------------------------------------------"<<endl;
+	cin>>number;
+	switch (number)
+	{
+	
+	case 1 :
+		
+	cout<<"Enter Your Gender"<<endl;
+	cin>>gender;
+	 if (gender=='M')
+	cout<<"Enter Your Age"<<endl;
+	cin>>age;
+	 	if (age>=18)
+		cout<<"Income = 60$/Per Day"<<endl;
+		
+	else 
+	
+		cout<<"Income = 30$/Per Day"<<endl;
+	
+	break;
+	
+	case 2:
+	cout<<"Enter Your Gender"<<endl;
+	cin>>gender;
+	 if (gender=='F')
+	cout<<"Enter Your Age"<<endl;
+	cin>>age;
+	 	if (age>=18)
+		cout<<"Income = 30$/Per Day"<<endl;
+		
+	else 
+	
+		cout<<"Income = 15$/Per Day"<<endl;
+		
+	break;
+	
+	default :
+		cout<<"Wrong InPut"<<endl;
+	
+}
+	
+	return 0;
+	
+	
+	
+	
+}

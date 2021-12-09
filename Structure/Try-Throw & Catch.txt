@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main ()
+
+
+{
+	
+	try 
+	{
+		int MomAge=42;
+		int SonAge=50;
+		
+		if (SonAge > MomAge)
+		{
+			throw 99;
+		}	
+	}
+	
+	catch (int x)
+	{
+		
+		cout<<"Sons Age Cannot Be Greater Than Mom's Age ; ERROR NUMBER :"<<x;
+	}
+	
+	
+	
+	
+	return 0;
+}

@@ -1,0 +1,58 @@
+#include<iostream>
+using namespace std;
+
+int main ()
+{
+	
+    int arr[100]={0};
+    int bad[100]={0};
+    
+    int size=0;
+    int limit=0; 
+ 
+    cout<<"Enter Size of Array :";	
+	cin>>size;
+	
+	cout<<"Enter Limit At witch you want to rake values from user :";
+	cin>>limit;
+	
+	int k=0;
+	for(int i=0; i<size; i++)
+	   {
+		
+		int take=0;
+		cin >> take;
+		
+		if (take <= limit)
+            {
+              arr[i] = take;	
+			}
+			  
+		else
+		
+		    {
+		      bad[k] = take;
+			  k++;	
+			  cout<<"Error : Big Value, Retake : "; 
+		      i--;
+	 		}	
+	   }
+	   
+	   
+	cout<<endl<<endl;   
+	cout<<"Wrong Inputs : ";
+	
+	for (int i=0; i<size; i++)
+	    {
+	      cout<<bad[i]<<" "; 	
+		}      
+	
+	 cout<<endl<<endl;
+	
+	 cout<<"Correct Saved Values in Array :";   
+	 for (int i=0; i<size; i++)
+	    {
+	      cout<<arr[i]<<" "; 	
+		}   
+	
+}

@@ -1,0 +1,21 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main ()
+{
+	string name("Zaheer UD Din Baber");
+    cout<<"Original Name : "<<name<<endl;
+    name.replace   ( 14 , 4 , "Chahgaz") ;
+    
+    
+    // fitst number shows after how many latters apply replace //
+    // 2nd number shows how much latters to be replace //
+    //3rd replacing item //
+    
+    
+    
+    cout<<"New After Replacing : "<<name<<endl;
+    
+ return 0;	
+	
+}

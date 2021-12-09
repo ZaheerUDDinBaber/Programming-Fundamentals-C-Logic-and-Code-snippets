@@ -1,0 +1,87 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+	int a,b,c,d,add,sub,mul,div,mode;
+	
+	cout<<"Select A Number To Do Following 	Opreations "<<endl;
+	cout<<"1 For ADDITION                                          "<<endl;       
+	cout<<"2 For SUBTRACTION                                       "<<endl;
+	cout<<"3 For MULTIPLY                                          "<<endl;
+	cout<<"4 For DIVISION                                          "<<endl;
+	cout<<"5 For MODE                                              "<<endl;
+	cout<<"___________________________________________________     "<<endl;
+	cout<<"Input :                                                 "<<endl;
+	
+	
+	cin>>a;
+	cout<<"---------------------------------------------------      "<<endl;
+	switch (a)
+{
+
+	case 1 :
+		cout<<"Type 3 Numbers For Addition"<<endl;
+		cin>>b;
+		cin>>c;
+		cin>>d;
+		add=b+c+d;
+		cout<<"Sum Is Equal To "<<add;
+		cout<<endl;
+	
+	break;
+	
+	case 2:
+		cout<<"Type 3 Numbers For Subtraction"<<endl;
+		cin>>b;
+		cin>>c;
+		cin>>d;
+		sub=b-c-d;
+		cout<<"Subtraction Is Equal To "<<sub;
+		cout<<endl; 
+	break;
+	
+	case 3:
+		cout<<"Type 3 Numbers For Multiplication"<<endl;
+		cin>>b;
+		cin>>c;
+		cin>>d;
+		mul=b*c*d;
+		cout<<"Multiplication Is Equal To "<<mul;
+		cout<<endl;
+	break;
+	
+	case 4:
+		cout<<"Type 3 Numbers For Division"<<endl;
+		cin>>b;
+		cin>>c;
+		cin>>d;
+		div=b/c;
+		div=div/d;
+		cout<<"Division Is Equal To "<<div;
+		cout<<endl;
+	
+	break;
+	
+	case 5 :
+		cout<<"Type Tow Numbers To Find Mode"<<endl;
+		cin>>b;
+		cin>>c;
+		mode=b%c;
+		cout<<"Mode Of Two Numbers Is :"<<mode<<endl;
+	break;
+	
+	
+	default :
+		cout<<"Wrong Input"<<endl;
+	
+	
+}
+	
+	return 0;
+	
+	
+	
+	
+	
+	
+}

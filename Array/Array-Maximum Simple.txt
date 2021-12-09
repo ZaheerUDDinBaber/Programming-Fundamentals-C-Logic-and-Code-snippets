@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+	int Num_Students;
+	int Max=0;
+	int Min=10000000;
+	
+	cout<<"Enter Number Of Students : ";
+	cin>>Num_Students;
+	
+	int Array[Num_Students];
+	cout<<endl;
+	
+	for(int i=0; i<=Num_Students; i++)
+    {
+	    cout<<"Enter Marks Of Student "<< i<<" :";
+	    cin>>Array[i];
+	    if (Max<Array[i])
+	        Max=Array[i];
+	     
+	    if (Min>Array[i])
+	        Min=Array[i];	     
+    }
+    cout<<endl<<endl;
+	cout<<"Max Marks Are "<<Max<<" While Min Marks Is "<<Min;
+}

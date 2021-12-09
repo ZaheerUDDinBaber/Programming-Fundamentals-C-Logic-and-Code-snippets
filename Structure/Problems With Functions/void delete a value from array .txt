@@ -1,0 +1,118 @@
+#include<iostream>
+using namespace std;
+
+void get (int [],int );
+void del (int [],int );
+void prt (int [],int ); 
+
+int main ()
+{
+	
+	
+	int a[200];
+	int limit=0;
+	
+	get(a,limit);
+		 
+	return 0;
+}
+
+void get (int a[], int limit)
+
+{
+	cout<<"Give Limit :";
+	cin>>limit;
+	
+	for (int i=1; i<=limit; i++)
+	    {
+	    cout<<i<<" : ";
+	    cin>>a[i]; 	
+		}
+    
+    del(a,limit);
+}
+
+
+void del(int a[], int limit)
+{
+	int index;
+	char warning;
+	
+	cout<<"Type Indux To Delete Its Value : "; 
+	cin>>index;
+	if (index>limit)
+	    {
+	    	cout<<"Unknown Number , Try Again ? 'Y ";
+			cin>>warning;
+			
+			if (warning=='Y')
+			   {
+			     	system("CLS");
+	                for (int i=1; i<=limit; i++)
+	                   {
+	        	        cout<<i<<" : ";
+	        	        cout<<a[i]<<endl;
+			           }
+			            del(a,limit);
+			            prt(a,limit);
+			           
+			   }
+			      
+		}
+	
+	else
+	{
+	
+	    cout<<"Type 'Y' To Remove Value Of index "<<index<<endl;
+	
+	    cin>>warning;
+	    int VALUE=0;
+	    if (warning=='Y')
+	      {
+	       a[index]=VALUE;
+		   prt(a,limit);	
+          }
+	  
+        else
+	    {
+		   cout<<"Wrong Command , Still Want To Delete A Value Press Again 'Y' ! "<<endl;
+		   cin>>warning;
+		
+		   if (warning=='Y')
+		      
+			  {
+	            
+				system("CLS");
+	            for (int i=1; i<=limit; i++)
+	                {
+	        	      cout<<i<<" : ";
+	        	      cout<<a[i]<<endl;
+			        }
+			          del(a,limit);
+					  prt(a,limit);	   	
+		       }
+		
+		    else
+		    {
+		     cout<<"Thank You ! "<<endl;  	
+		    }
+		    
+	     }
+    }
+	   
+	
+	
+}
+
+void prt(int a[],int limit)
+{
+	
+	cout<<"After Updating "<<endl;
+	int i;
+	for (i=1; i<=limit; i++)
+	    {
+	      cout<<i<<" : ";
+		  cout<<a[i]<<endl;	
+		} 
+}
+

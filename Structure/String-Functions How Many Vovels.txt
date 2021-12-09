@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+
+int No_of_Vovels(char [], int);
+int main ()
+{
+	
+	char input [100];
+	gets (input);
+	
+		
+	int count=0;
+	
+	while (input[count] != '\0') 
+	   {
+	   	  count++;
+	   }
+	   
+	cout<<No_of_Vovels(input , count);
+	
+	return 0;
+}
+
+int No_of_Vovels(char input [] , int count)
+{
+	int vovels=0;
+	
+	cout<<"Number Of Letters : "<<count<<endl;
+	cout<<"Number Of Vovels : " ;
+	
+
+	for (int i=0; i<=count; i++)
+	{
+	   if (input[i]=='a' || input[i]=='e' || input[i]=='i' || input[i]=='o' || input[i]=='u')
+	      {
+	      	vovels++;
+		  }
+	}
+
+	return vovels;
+	
+	
+}

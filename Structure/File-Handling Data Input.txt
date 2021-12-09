@@ -1,0 +1,32 @@
+#include<iostream>
+#include<string>
+#include<fstream>
+using namespace std;
+int main()
+{
+	
+    ofstream Data;
+    Data.open ("Phone Numbers Data.txt");
+	cout<<"Enter Index Number - Person's Name - Phone Number "<<endl;
+	cout<<"Press Ctrl + Z To Shutdown & Save Data"<<endl;
+	
+	Data<<"Index |  Name                            | Phone Number "<<endl;
+	
+	int idNumber;
+	string Name;
+    long long cellNumber;
+	
+	while (cin >> idNumber >> Name >> cellNumber)
+	{
+		 
+		Data <<idNumber <<"          "<<Name <<"                      " <<cellNumber<<endl;
+		
+	}
+	Data.close(); 
+	
+	
+	
+	
+	
+	return 0;
+}

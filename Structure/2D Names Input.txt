@@ -1,0 +1,64 @@
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+	    char Names[70][45] = {0};
+		int cout_count[70] = {0}; // for getting cout of each name//
+
+		int Names_Count = 0;
+		cout << "Enter Number Of Names :";
+		cin >> Names_Count;
+		cout << endl;
+
+
+		for (int i = 0; i <= Names_Count; i++)
+		{
+			char Input[50] = { 0 };
+			cin.getline(Input,50);
+
+
+			int length = 0;
+			while (Input[length] != '\0')
+			{
+				length++;
+			}
+			
+             cout_count[i] = length;
+
+			for (int j = 0; j<length; j++)
+			{
+				Names[i][j] = Input[j];
+			}
+		}
+
+    cout<<endl<<endl;
+    
+    
+	int Search=0;
+    cout<<"Search Index :";
+    cin >> Search;
+
+
+		for (int i = Search; i <=Search; i++)
+		{
+
+			for (int j = 0; j<cout_count[i]; j++)
+			{
+				cout << Names[i][j];
+				
+			}
+			cout << endl;
+            cout <<"length : "<<cout_count[i]; 
+			cout << endl;
+		}
+        
+         
+   
+     
+		system("pause");
+
+
+		return 0;
+	}

@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+int main()
+
+{
+	
+	int a[3][4];
+	int b[3][4];
+	int r[3][4];
+
+
+	 cout<<"input value of A matrix "<<endl;
+	 cout<<"Input First Rows Then Columbs "<<endl;
+	 for(int i=0; i<3; i++)
+	 for(int j=0; j<4; j++)
+
+{	 
+	 cout<<"Row "<<i<<" & "<<"Columb "<<j<<endl;
+	 cin>>a[i][j];
+}
+     cout<<endl;
+     cout<<"************************"<<endl;
+     cout<<"input value of B matrix "<<endl;
+     cout<<"Input First Rows Then Columbs "<<endl;
+     for(int i=0; i<3; i++)
+	 for(int j=0; j<4; j++)
+{
+	 
+	 
+	 cout<<"Row "<<i<<" & "<<"Columb "<<j<<endl;
+         cin>>b[i][j];
+}
+     cout<<endl;
+     cout<<"**************************************************************"<<endl;
+     cout<<endl<<" Result Of Addition ";
+	 for(int i=0; i<3; i++)
+	 for(int j=0; j<4; j++)
+{
+	  
+	  r[i][j] =a[i][j]+ b[i][j];
+	  cout<<"  ";
+	  cout<<r[i][j];	
+}
+	
+return 0;
+	
+	
+}

@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main ()
+
+{
+	int sum;
+	int t;
+    
+	int a[t];
+	
+	cout<<"Enter subjects : ";
+	cin>>t;
+	
+	for ( int i=0; i<=t; i++)
+	{
+	
+	cout<<"Enter marks of subjects "<<i<<" : ";
+	cin>>a[i];
+
+	sum= sum+a[i];
+    static_cast<double>(sum);
+    cout<<endl;
+    
+}
+cout<<" Results : ";
+cout<<sum;
+return 0;	
+
+}

@@ -1,0 +1,21 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main ()
+{
+
+    string name("Zaheer UD Din Baber");
+    cout<<"Original Name : "<<name<<endl;
+    name.insert ( 19 ,": The Ghost") ;
+    
+    
+    // fitst number shows after how many latters apply insert //
+    //2rd replacing item //
+    
+    
+    
+    cout<<"New After Addition : "<<name<<endl;
+    
+ return 0;	
+	
+}

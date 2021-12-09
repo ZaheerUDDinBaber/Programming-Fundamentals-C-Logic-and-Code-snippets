@@ -1,0 +1,146 @@
+#include<iostream>
+using namespace std;
+int main ()
+
+{
+	
+	int i,j,k,l;
+	
+	cout<<"Its A For Loop Opration Write A Number To Print As It Is"<<endl;
+
+
+	{
+		
+	
+    for (i=2; i<=2; i++)  
+    cout<<i;
+    }
+    
+	{
+	
+	for (j=3; j<=3; j++)
+	cout<<j;
+    }
+    
+    {
+	
+	for (k=2; k<=2; k++)
+	cout<<k;
+	
+    }
+    
+    {
+	
+	
+	for (l=9; l<=9; l++)
+	cout<<l;
+	
+    }
+	
+	
+	
+	
+	return 0;
+	
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+#include<iostream>
+using namespace std;
+int main ()
+
+{
+	
+	int i,j,k,l;
+	int m,n,o,p;
+	
+	cout<<"Its A For Loop Opration Write A Number To Print As It Is"<<endl;
+
+cin>>m;
+cin>>n;
+cin>>o;
+cin>>p;
+
+	{
+		
+	
+    for (i=m; i<=m; i++)  
+    cout<<i;
+    }
+    
+	{
+	
+	for (j=n; j<=n; j++)
+	cout<<j;
+    }
+    
+    {
+	
+	for (k=o; k<=o; k++)
+	cout<<k;
+	
+    }
+    
+    {
+	
+	
+	for (l=p; l<=p; l++)
+	cout<<l;
+	
+    }
+	
+	
+	
+	
+	return 0;
+	
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+                                                                   nestting
+------------------------------------------------------------------------------------------------------------------------------------------
+
+#include<iostream>
+using namespace std;
+int main ()
+
+{
+	
+	int i,j,k,l;
+	int m,n,o,p;
+	
+	cout<<"Its A For Loop Opration Write 4 Number To Print As It Is"<<endl;
+
+cin>>m;
+cin>>n;
+cin>>o;
+cin>>p;
+
+	{
+		
+	
+    for (i=m; i<=m; i++)  
+    cout<<i;
+
+	for (j=n; j<=n; j++)
+	cout<<j;
+		
+	for (k=o; k<=o; k++)
+	cout<<k;
+
+	for (l=p; l<=p; l++)
+	cout<<l;
+	
+
+
+    }
+	
+	
+	
+	
+	return 0;
+	
+}

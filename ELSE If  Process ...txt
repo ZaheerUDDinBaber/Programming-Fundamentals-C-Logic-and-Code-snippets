@@ -1,0 +1,25 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+double firstNum, secondNum;
+cout << "Enter first nonzero number= ";
+cin >> firstNum;
+cout << "Enter second nonzero number= ";
+cin >> secondNum;
+cout<<endl;
+
+
+if (firstNum==0 || secondNum==0)
+    cout<<"Both numbers should be nonzero";
+else if (firstNum>secondNum)
+    cout<<"The first number divided by the second number= "<<firstNum/secondNum;
+else if(firstNum<secondNum)
+    cout<<"The second number divided by the first number= "<<secondNum/firstNum;
+else
+    cout<<"The product of the numbers= "<<firstNum*secondNum;
+    
+
+return 0;
+}

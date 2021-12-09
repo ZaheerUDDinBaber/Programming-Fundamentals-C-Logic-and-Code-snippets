@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{	
+	int a,b,sum;
+	cout<<"Type to numbers to make a sum"<<endl;
+	cin>>a;
+	cin>>b;
+	sum=a+b;                                                               //formula of sum//
+	cout<<"sum ="<<sum;
+	
+/*	jvxdhvukxj
+	ndjhfhsdgfhd
+	sbdfksdfjs
+	sdnfjsnfjs
+	skndfjksdhf */
+	
+	
+	return 0;
+}

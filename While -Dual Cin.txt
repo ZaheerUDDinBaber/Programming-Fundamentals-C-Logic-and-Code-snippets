@@ -1,0 +1,35 @@
+
+#include<iostream>
+using namespace std;
+int main ()
+    
+{
+
+
+int a;
+int i;
+
+cout<<"Write Target "<<endl;
+cin>>i;
+cout<<"Write Limit"<<endl;
+cin>>a;
+while (i<=a)
+{
+
+cout<<i<<" Pakistan "<<endl;
+
+i++;
+
+}
+		
+
+return 0;
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,71 @@
+----------------------------------------------------------------------------------------------------------------
+nested if else
+----------------------------------------------------------------------------------------------------------------
+
+#include<iostream>
+using namespace std;
+int  main()
+{
+	int a,b,x;
+	cin>>a;
+	if(a>=5)
+	{
+		if(a>=12)
+		cout<<"a+";
+		else
+		cout<<"a-";
+	}
+	else 
+	cout<<"fail";
+	return 0;
+}
+
+                                  *************************************************
+
+
+#include<iostream>
+using namespace std;
+int  main()
+{
+	int a,b,x;
+	cin>>a;
+	
+	if(a>=5)
+	
+	{
+		
+	    if (a>=19)
+		cout<<"dean"<<endl;
+		
+		else if (a>=15)
+		cout<<"rector"<<endl;
+		
+		else if(a>=12)
+		cout<<"a+";
+		else
+		cout<<"a-";
+	}
+	else 
+	cout<<"fail";
+	return 0;
+}
+
+
+----------------------------------------------------------------------------------------------------------------
+if else	
+----------------------------------------------------------------------------------------------------------------	
+	
+#include<iostream>
+using namespace std;
+int  main()
+{
+	int a,b,x;
+	cin>>a;
+	if(a>=6)
+	cout<<"a+";
+	else if(a>=5)
+	cout<<"a-";
+	else
+	cout<<"fail";
+	return 0;
+}	

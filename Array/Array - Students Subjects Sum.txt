@@ -1,0 +1,52 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main ()
+
+{
+	
+	float Subject[5];
+	int sum;
+	for (int i=0; i<5; i++)
+	{
+		
+		cout<<" Marks Of Student In Subject "<<i<<" = ";
+		
+		cin>>Subject[i];
+		cout<<endl;
+}{
+		for(int j=0;j<5;j++)
+	   		sum = sum + Subject[j];
+	   		cout<<sum; 	  
+    }	
+return 0;
+	
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+                                                               cout
+-------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main ()
+
+{
+	 int sum;
+	
+	 int a1 [5]={6,5,9,3,7};
+
+for (int i=0; i<5; i++ )
+{
+     cout<<"Marks of student "<<i<<" = ";
+     cout<<a1[i];
+     
+     cout<<endl;
+     cout<<"+5 marks in student "<<i<<endl;
+     sum= a1[i]+5;
+    cout<<sum<<endl;
+     
+}
+return 0;
+
+}

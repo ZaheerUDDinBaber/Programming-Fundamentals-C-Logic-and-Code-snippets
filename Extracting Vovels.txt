@@ -1,0 +1,47 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main ()
+
+{
+
+ char input;
+ cout<<"Input Charecter To Find It Is Vovel Or Not "<<endl;
+ 
+ cin>>input;
+ 
+ switch (input)
+{
+
+ case 'A' :
+ case 'a' :
+ case 'E' :
+ case 'e' :
+ case 'I' :
+ case 'i' :
+ case 'O' :
+ case 'o' :
+ case 'U' :
+ case 'u' :
+ 	
+ cout<<"It Is A Vovel Latter "<<endl;
+ break;
+
+ default :
+ cout<<input<<" Is Not A Vovel Letter " <<endl;
+}
+	
+	if (input >(char)64 && input<(char)91)
+	{
+	cout<<"It Is A Big Latter "<<endl;
+    }
+	else
+	{
+	cout<<"It Is A Small Latter "<<endl;
+    }
+return 0;
+
+}
+	
+
+

@@ -1,0 +1,23 @@
+Two Equal Methods To Print An Array by pointer
+==============================================
+char b[100];
+char *ptr = b;
+
+    int k=0;
+    while (ptr [k] != '\0')
+           {
+           	cout<<ptr[k];
+           	ptr++;
+	       }
+
+----------------------------------------------
+char b[100];
+char *ptr = b;
+    
+    while (*ptr != '\0')
+           {
+           	cout<<*ptr;
+           	ptr++;
+	       }
+	       
+----------------------------------------------

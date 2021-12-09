@@ -1,0 +1,49 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+void fun  (int [],  int [] , int);
+void fun_2(int [],  int [] , int);
+
+int main ()
+{
+	
+	int array [500];
+	int squre [500];
+	int size;
+	cout<<"enter size of array ";
+	cin>>size;
+	
+	fun (array,squre,size);
+	
+}
+
+void fun(int array [], int squre [], int size)
+{
+	for (int i=1; i<=size; i++)
+	    {
+	      cin>>array[i]; 	
+		}
+   
+    fun_2(array,squre,size);   	
+}
+
+void fun_2(int array [],int squre[], int size)
+{
+	
+	for (int i=1; i<=size; i++)
+	    {
+	    	int value=0;
+	    	value=pow(array[i],2);
+	    	squre[i]=value;
+		}
+	
+	cout<<endl<<endl<<endl;
+	cout<<"Array 2 Excuting : ";
+	
+	for (int i=1; i<=size; i++)
+	    { 
+		   cout<<squre[i]<<" ";		
+		} 
+	
+}

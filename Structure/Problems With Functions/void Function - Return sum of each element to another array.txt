@@ -1,0 +1,46 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+void sum(int [],int [], int);
+
+int main ()
+{
+	int a[5000];
+	int b[5000];
+	
+	int size;
+	
+	system ("color 4");
+	cout<<"enter number of limits to make sum :";
+	
+	cin>>size;
+	
+	for (int i=1; i<=size; i++)
+	    {
+	    	cin>>a[i];
+		}
+	
+	cout<<endl;
+	sum(a,b,size);
+	
+	return 0;
+}
+
+void sum(int a[],int b[], int size)
+{
+	
+	int sum=0;
+	
+	for (int i=1; i<=size; i++)
+	    {
+	    	sum=a[i]+sum;
+	    	b[i]=sum;
+		}
+		
+	for (int i=1; i<=size; i++)
+	    {
+	    	cout<<b[i]<<" ";
+		}	
+	
+}

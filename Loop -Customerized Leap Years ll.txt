@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main ()
+
+{
+	
+	int YearIn;
+	int YearOut;
+	
+	cout<<"Input Starting Year : "  ;
+	cin>>YearIn;
+	cout<<"Input Ending Year : ";
+	cin>>YearOut;
+	cout<<endl<<endl;
+	
+	int i=0;
+	for (i=YearIn; i<YearOut; i++)
+	{
+	
+    	if (i % 4== 0 || i % 100 ==0 || i % 400 ==0) 
+	        
+		 {
+	      cout<<i<<" Is A Leap Year "<<endl;
+	     }
+	     
+	    else  
+	     {
+	     	cout<<i<<" Is Not A Leap Year "<<endl;
+		 }
+	   	 
+	}
+	return 0;
+}

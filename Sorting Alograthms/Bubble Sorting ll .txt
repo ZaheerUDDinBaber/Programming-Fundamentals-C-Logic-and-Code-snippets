@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int array[7];
+
+a    cout<<"Enter 7 numbers randomly : "<<endl;
+    
+    for(int i=0; i<7; i++)
+       {  
+          cin>>array[i];        
+       }  
+    cout<<"----------------------------------------------------------"<<endl;
+   	cout<<endl;    
+     int temp;
+     for(int i=0; i<7; i++)
+       {
+         for(int j=0; j<7; j++)
+          {    
+            if(array[j]>array[j+1])
+            {
+             temp=array[j];
+             array[j]=array[j+1];
+             array[j+1]=temp;        
+            }
+          }         
+       }
+   
+    cout<<endl<<endl;
+    cout<<"  Sorted Array is: "<<endl;
+	for(int i=0; i<7; i++)
+     {
+      cout<<"Value at "<<i<<" Index: "<<array[i]<<endl;  
+     }
+   
+   
+    
+return 0;
+}

@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+	
+	char a [50] = {0};
+	char rev [50] ={0};
+	
+	gets (a);
+	
+	int i=0;
+	int len=0;
+	while (a[i] != '\0')
+	      {
+	      	
+	      	len++;
+	      	i++;
+		  }
+	
+	int temp=len-1;
+	int k=0;
+	while (k < len)
+	      {
+	      	
+			rev [k] = a[temp];
+	      	k++;
+	      	temp--;
+	      	
+		  }
+		
+	int m=0;
+	int count = len;  
+	while (m < len)    
+           {
+             if (rev [m] == a [m]) 
+			     {
+			       count--;
+				   	
+				 }
+				m++;  	
+		   }	
+	
+	if (count == 0)
+	   {
+	   	cout<<"Its A Paladrom";
+	   }
+	else 
+	    {
+	    	cout<<"its not a paladrom";
+		}
+	
+}

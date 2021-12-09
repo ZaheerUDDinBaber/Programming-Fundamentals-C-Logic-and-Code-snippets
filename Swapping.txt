@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+int main()
+
+{
+    double a,b,z;
+    
+    cout<<"Type Value Of A"<<endl;
+    cin>>a;
+    cout<<"Type Value Of B"<<endl;
+    cin>>b;
+    cout<<"-----------------------------"<<endl;
+	    z=a;
+    	a=b;
+    
+    
+    cout<<"A (After Swapping B To A ):"<<a<<endl;
+    cout<<"B (After Swapping A To B ):"<<z;
+    
+		return 0;
+}
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+
+{
+    double a,b,z;
+    
+    cout<<"Type Value Of A"<<endl;
+    cin>>a;
+    cout<<"Type Value Of B"<<endl;
+    cin>>b;
+    cout<<"-----------------------------"<<endl;
+	   swap (a,b);
+    
+    
+    cout<<"A (After Swapping B To A ):"<<a<<endl;
+    cout<<"B (After Swapping A To B ):"<<b;
+    
+		return 0;
+}

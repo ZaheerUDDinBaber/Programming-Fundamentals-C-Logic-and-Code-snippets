@@ -1,0 +1,80 @@
+#include<iostream>
+#include<cmath>
+#include<string>
+using namespace std;
+
+// globlblizeing //
+const float OUnitP =14.50;
+
+int   Num;
+int   ID[500];
+int  Qua[500];
+int  Tot[500];
+char Nam[500];
+float formula;
+char Again;
+
+
+int main ()
+
+{
+	
+	cout<<"Number Of Customers :";
+    cin>>Num;
+    system ("CLS");
+    
+	cout<<"---------------------"<<endl;
+    for (int i=0; i<Num; i++)
+	{
+	  
+	  cout<<"ID : ";
+	  cin>>ID[i];
+	  cout<<"Name (Singel Char !) : ";
+	  cin>>Nam[i];
+	  cout<<"Quantity : ";
+	  cin>>Qua[i];
+	  cout<<"Total Price Generated ";
+	  formula=Qua[i]*OUnitP;
+	  Tot[i]=formula;
+	  cout<<endl;
+	  cout<<"---------------------"<<endl;
+	}	
+
+while (Again='Y') //for searching again in given data //
+{  
+
+    int Search;
+    int count=0;
+    
+    cout<<endl<<endl;
+    
+    
+	cout<<"Search ID :";
+	cin>>Search;
+
+  		for (int m=0; m<Num; m++)
+		{
+			if (Search==ID[m])
+			{
+			 count++;
+			}
+		
+			
+			if (count==1)  	
+			{
+		     cout<<"------------------"<<endl;
+		     cout<<"ID      "<<"Name "<<"    Qyantity "<<"    Total "<<endl;
+			 cout<<ID[m]<<"        "<<Nam[m]<<"        "<<Qua[m]<<"        "<<Tot[m]; 
+			 cout<<endl<<endl;
+			 break; 
+		    }
+        }
+
+       cout<<"Search Again ? > Press 'Y' "<<endl;
+	   cin>>Again;
+	   cout<<endl<<endl;
+	 
+}
+  
+return 0;	
+}  

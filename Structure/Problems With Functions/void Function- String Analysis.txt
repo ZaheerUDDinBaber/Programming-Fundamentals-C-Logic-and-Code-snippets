@@ -1,0 +1,58 @@
+#include<iostream>
+using namespace std;
+void results(char [], int);
+int main ()
+{
+	char data [500];
+	
+	gets(data);
+	
+	int size=0;
+	while (data[size] !='\0')
+	     { 
+	      size++; 
+		 }		 
+    
+	results(data ,size);
+
+}
+
+void results(char data [], int size)
+{
+	int voidspace=0;
+	int vovels=0;
+	int constants=0;
+	int digits=0;
+	
+	for (int i=0; i<=size; i++)
+	    {
+	    	if (data[i]==' ')
+		        {
+		          voidspace++;	
+				}
+				
+	    	if (data[i]=='a' || data[i]=='e' || data[i]=='i' || data[i]=='o' || data[i]=='u' || data[i]=='A' || data[i]=='E' || data[i]=='I' || data[i]=='O' || data[i]=='U')
+	            {
+	            	vovels++;
+				}
+	        else
+	            {
+	            	constants++;
+				}
+				
+			if (data[i]>'0' && data[i]<='9')
+			    {
+			        digits++;	
+				}	
+	    }
+	
+	cout<<endl<<endl<<endl;
+	cout<<"Total LENGTH : "<<size<<endl;			
+	cout<<"Vide Spaces : "<<voidspace<<endl;
+	cout<<"Vovels : "<<vovels<<endl;
+	cout<<"Constants : "<<constants<<endl;
+	cout<<"Digits : "<<digits;			
+				
+				
+	
+}

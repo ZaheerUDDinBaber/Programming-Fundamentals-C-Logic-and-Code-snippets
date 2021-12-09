@@ -1,0 +1,11 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main ()
+{
+	char alpha;
+	cout<<"enter alphabet to find its ascii"<<endl;
+	cin>>alpha;
+	cout<<"ascii of '"<<alpha<<"' is : "<<(int)alpha; 
+	return 0;
+}

@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+void copy (char [], char[], const int);
+
+int main  (){
+
+	char a [500];
+	char b [500];
+	
+	
+	gets (a);
+	
+	int size=0;
+	
+	while (a[size] != '\0')
+	      {
+	      	size++;
+		  }
+	
+	copy (a,b,size);
+	
+}
+
+void copy (char a[], char b [], const int size)
+{
+   for (int i=0; i<size; i++)
+        {
+        	b[i]=a[i];
+		}
+	// printing b//
+	cout<<"Copied String B :";
+	for (int i=0; i<size; i++)
+	     {
+	     	
+	      cout<<b[i];
+		 }
+	
+}

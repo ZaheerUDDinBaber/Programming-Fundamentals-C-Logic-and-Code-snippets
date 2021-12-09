@@ -1,0 +1,104 @@
+#include<iostream>
+using namespace std;
+
+void input (int [], int);
+void search (int [], int);
+void  result (int [], int, int); 
+
+int main ()
+{
+	int i[500];
+	int size;
+	cout<<"Number Of Number To Enter : ";
+	cin>>size;
+	
+	input (i,size);
+	return 0;
+}
+
+
+void input (int i [], int size)
+{
+	
+	for (int l=1; l<=size; l++)
+	     {
+	     	cin>>i[l];
+		 }
+	
+	search(i,size);
+	
+}
+
+void search (int i [], int size)
+{
+	
+	int find;
+	int count=0;
+	int duplicate=0;
+	char again ='Y';
+	
+	cout<<endl;
+	cout<<"Enter Number To Find Its Count For Repitation : ";
+	cin>>find;
+	
+	for (int k=1; k<=size; k++)
+	    {
+	    	if (find==i[k])
+	    	    {
+	    	    	count++;
+	    	    	duplicate=i[k];
+	    	    	break;
+				}
+		}
+	
+	if (count != 0)
+	   {
+	     
+		 cout<<"Number Found ";
+	     result(i,size,duplicate);
+	     
+	   } 
+	else
+	   {
+		 cout<<"Not Found Try Again ? > 'Y' "<<endl;
+	   	 cin>>again;
+	   	 if (again=='Y')
+	   	    {
+	   	      system("CLS");
+	   	      cout<<"Given Values Are Below "<<endl;
+	   	      
+				 for (int m=1; m<=size; m++)
+	   	          
+				  {
+	   	            cout<<m[i]<<" ";	
+				  }
+			 
+			  search(i,size);	  	
+			}
+	   }
+}
+void  result (int i [], int size , int duplicate) 
+{ 
+
+       int repitation;
+	   for (int k=1; k<=size; k++)
+	       {  
+	       	 if (duplicate==i[k])
+	       	  {
+	       	  	repitation++;
+			  }
+		   } 	
+	
+	    cout<<endl;
+		cout<<"Number : "<< duplicate <<" is Given  '"<<repitation<<"' Time ";
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

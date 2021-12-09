@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+   char a[100];
+   gets (a);
+   
+   int i=0;
+   int count =0;
+   
+   while (a[i] != '\0')
+         {
+		     count++;
+		    
+            if (a[i] == ' ')
+         
+         	  {
+			   count--;
+		      }   
+		    
+		    
+			i++;  
+		 }
+     
+	cout<<count;
+   
+   return(0);
+}

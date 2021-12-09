@@ -1,0 +1,141 @@
+#include<iostream>
+using namespace std;
+
+
+int mangos=30;
+int orange=16;
+int banana=15;
+
+int cstmr_cont[5000];
+int totalprice[5000];
+
+int mangos1[5000];
+int orange1[5000];
+int banana1[5000];
+
+int size;
+
+void calculations (int [],int [], int, int,int,int );
+void search_data  (int [],int [], int, int,int,int );
+
+
+int main ()
+{
+  
+    calculations(totalprice,cstmr_cont,size, mangos,orange,banana);
+    
+return 0;	
+}
+
+//FUNCTIONS//
+
+
+void calculations (int totalprice[], int cstmr_cont [], int size, int mangos, int orange, int banana)   //Data Input Binarry// 
+
+{
+	cout<<"\t\t\t\t\t\t Zaheer's Mart "<<endl;
+	cout<<endl<<endl<<endl<<endl;
+	cout<<"enter number of customers : ";
+	cin>>size;
+	system("CLS");
+	int m,o,b;
+	int formula;
+	
+	for (int i=1; i<=size; i++)
+	    {
+	    	cout<<"Customer : "<<i;
+	    	cout<<endl;
+	    	cstmr_cont[i]=i;
+	
+			cout<<"Bananas :";
+	    	cin>>b;
+	    	banana1[i]=b;
+	    	
+			
+			cout<<"Oranges :";
+	    	cin>>o;
+	    	orange1[i]=o;
+	    	
+	    	
+			cout<<"Mangos  :";
+	    	cin>>m;
+	    	mangos1[i]=m;
+	    	
+	    	formula= m*mangos + b*banana + o*orange;
+	    	totalprice[i] = formula;
+	    	cout<<"-----------------------------------------------------------------------------"<<endl;
+	    }
+		
+		
+		cout<<"No.           Oranges            Bananas        Mangos          Total Bill       "<<endl;
+		cout<<"---------------------------------------------------------------------------------"<<endl;	
+	
+	for (int i=1; i<=size; i++)
+	     {
+	       
+		   
+	       cout<<i<<"                "<<orange1[i]<<"                "<<banana1[i]<<"               "<<mangos1[i]<<"                "<<totalprice[i]<<endl; 
+	       	
+	     	
+		 }	
+		 
+	cout<<endl<<endl<<endl;	 
+    search_data(totalprice,cstmr_cont,size, mangos,orange,banana);
+} //fuction 1 end//
+		 
+
+//function 2 start//		 
+void search_data (int totalprice[], int cstmr_cont [], int size, int mangos, int orange, int banana) //found section//	 
+{
+    	
+   	int found_key;
+   	int count=0;
+	int i;
+	char Again='Y';
+	
+	cout << "Enter Customer No. To Find His Data :";
+	system ("color 2");
+	
+	cin>> found_key;
+	
+	cout<<endl<<endl;
+	for (i=1; i<=size; i++)
+	    {
+	      if (found_key==cstmr_cont[i])
+	         {
+	            count++; 	
+		        break;     
+			 }	  	
+		}
+
+	if (count==1)
+	   
+	    {
+	    	system ("color 1");
+	    	cout<<"No.           Oranges            Bananas        Mangos          Total Bill       "<<endl;
+		    cout<<"---------------------------------------------------------------------------------"<<endl;
+		    cout<<cstmr_cont[i]<<"                "<<orange1[i]<<"                "<<banana1[i]<<"               "<<mangos1[i]<<"                "<<totalprice[i]<<endl; 
+	    } 
+	else 
+	    {
+	    	system ("color 4");
+	    	cout<<"Not Found ! : Want To Search Again ? > 'Y' ! ";
+            cin>>Again;
+			
+			if (Again=='Y')
+			   {
+			    search_data(totalprice,cstmr_cont,size,mangos,orange,banana);
+			   }
+			   
+			else 
+			   {
+			   	system("CLS");
+			   	system ("color 4");
+			   	cout<<"Thank You ! Good Bye";
+			   }    	    	
+	    } 	
+}	// function 2 end //	 
+		
+			
+
+    

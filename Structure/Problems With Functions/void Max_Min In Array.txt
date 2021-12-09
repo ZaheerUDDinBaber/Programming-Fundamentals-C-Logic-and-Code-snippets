@@ -1,0 +1,61 @@
+#include<iostream>
+using namespace std;
+
+void input (int [] , int );
+void search (int [], int );
+
+int main  ()
+{
+	int values [500];
+	int size;
+	cout<<"enter number of  value to find largest and smalest amoung them :";
+    cin>>size;
+	 	
+	input(values,size);
+	
+	return 0;
+}
+
+
+//function for values input //
+
+void input (int values[], int size)
+{
+	cout<<"Now Give The Values Below "<<endl<<endl<<endl;
+	for (int i=1; i<=size; i++)
+	    {
+	    	cin>>values[i];
+		}
+    
+	search (values,size);
+	
+}
+
+//search bigest & smalest //
+void search (int values[], int size)
+{
+	int max=0;
+	int min=1000000;
+	
+	for (int i=1; i<=size; i++) //maximum
+	    {
+	     
+		 if (max<values[i])
+		    {
+		     max=values[i];
+			}
+		 	
+		}
+	
+	for (int k=1; k<=size; k++)
+	    {
+	    	if (min>values[k])
+		    {
+		       min=values[k];
+			}	
+		}
+	cout<<"Maximum : "<<max<<endl;
+	cout<<"Minimum : "<<min;
+}
+
+

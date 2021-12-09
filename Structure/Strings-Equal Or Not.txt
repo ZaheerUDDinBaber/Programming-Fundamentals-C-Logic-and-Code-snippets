@@ -1,0 +1,38 @@
+#include<iostream>
+#include<conio.h>
+#include<string>
+using namespace std;
+int main ()
+{
+	
+	char St_1[50];
+	char St_2[50];
+	
+	
+	cout<<"Enter First String : ";
+	gets(St_1);
+	
+	cout<<endl;
+	
+	cout<<"Enter Second String : ";
+	gets(St_2);
+	
+	cout<<endl;
+	
+	int i;
+	for (i=0; St_1[i]==St_2[i] && St_1[i]!='\0' && St_2[i]!='\0';  i++);
+	
+	{
+		if (St_1[i] == St_2[i])
+		    cout<<"Strings Are Equal";
+	    else 
+	        cout<<"Strings Are Not Equal";
+    }
+	
+	
+	
+	
+	
+	
+	return 0;
+}

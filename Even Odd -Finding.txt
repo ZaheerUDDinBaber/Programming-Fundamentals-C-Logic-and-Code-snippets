@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int a,b,c;
+	cout<<"this is a programe to find entered numbber is even or odd "<<endl;
+	cin>>a;
+	{
+	
+	if (a%2==0)
+	cout<<"even"<<endl;
+	else
+	cout<<"odd"<<endl;
+    }
+return 0;
+}

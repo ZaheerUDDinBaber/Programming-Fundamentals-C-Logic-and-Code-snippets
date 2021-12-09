@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+	
+	char Input;
+	cout<<"Input Character To Find It It Vovel Or Not"<<endl;
+	cin>>Input;
+	if (Input=='A' || Input=='a' || Input=='E' || Input=='e' || Input=='I' ||Input=='i' || Input=='O' || Input=='o' || Input=='U' || Input=='u')
+    {
+         cout<<Input<<" Is Vovel "<<endl;	
+        	
+	}
+	else
+	{
+	     cout<<Input<<" Is Not Vovel "<<endl;	
+		
+	}			
+	
+	
+	
+	
+return 0;	
+}

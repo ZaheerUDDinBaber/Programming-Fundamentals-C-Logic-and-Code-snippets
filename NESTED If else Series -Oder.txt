@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int  main()
+
+{
+	int a,b,x;
+	cin>>a;
+	if(a>=5)
+	{
+		
+		if(a>=19)
+		cout<<"Rector";
+		
+		else if (a>=15)
+		cout<<"Dean";
+		
+		else if(a>=12)
+		cout<<"a+";
+		
+		else
+		cout<<"a-";
+	}
+	else 
+	cout<<"fail";
+	return 0;
+	
+}

@@ -1,0 +1,22 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main ()
+
+
+{	
+	int i;
+	int a;	
+	cin>>a;
+	i=0;
+	while  (i<=10)
+	
+	{
+		i=++i;
+		cout<<a<<" X "<<i<<" = "<<i*a<<endl;	
+	}
+	
+	
+	return 0;
+	
+}

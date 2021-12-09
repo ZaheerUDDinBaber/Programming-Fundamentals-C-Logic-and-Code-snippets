@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+
+{
+	
+int a=4,b=5;
+
+b=b+(++a);                                            //Pre Main Assigned Value & code value (++a or --a) dono main hi add subtract ho ga//
+
+cout<<"Pre : "<<b<<endl;
+
+cout<<endl<<"Now A : "<<a<<endl;
+
+cout<<"--------------------------------------------------"<<endl;
+
+int d=10,f=15;                                        //But Post Main Assigned Value Main add subtract to ho ga but code value main purani hi use ho gi//
+f=f+(d++);
+cout<<"Post : "<<f<<endl;
+
+cout<<endl;
+cout<<"Now D : "<<d;
+
+
+return 0;
+
+
+
+}

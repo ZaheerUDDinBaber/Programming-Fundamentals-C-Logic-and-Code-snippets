@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	
+	
+    cout<<"We Have Taken An Array Named 'Student' and It Octain Numbers According To Following Values "<<endl<<endl;
+    int m;
+    cout<<"Enter Number of Students "<<endl;
+    cin>>m;
+    int student[m];
+    
+    cout<<endl;
+	for (int i=0; i<m; i++ )
+       {       		 
+         cout<<"Enter Marks Of Student "<<i<<endl;
+		 cin>>student[i];
+       }
+   cout<<endl;
+   cout<<"Lets Find Out Largest & Smalest Number : "<<endl;
+         
+   int max=student[0];
+   int min=student[0];
+  
+   for (int i=0; i<m; i++)  
+ 
+ 	   {   
+	        if (student[i]>max)
+			{
+			max=student[i];
+		    }
+	    	if(student[i]<min)
+	    	{
+			min=student[i];
+	        }
+	    }
+	
+	cout<<"Max Number Is"<<endl<<max<<endl;               
+    cout<<"Min Number Is"<<endl<<min;   
+    
+         
+         
+ return 0;
+}

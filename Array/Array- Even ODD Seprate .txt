@@ -1,0 +1,64 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+	
+	int Input [100]={0};
+	int Even  [100]={0};
+	int Odd   [100]={0};
+	
+	int size=0;
+	
+	cout<<"Enter Size :";
+	cin>>size;
+	
+	for (int i=0; i<size; i++)
+	    {
+	    	cin>>Input[i];
+		}
+	
+	
+	
+	
+	int k=0;
+	int j=0;
+	
+	int oddlength=0;
+	int evenlength=0;
+	
+	for (int i=0; i<size; i++)
+	    {
+		  
+		  if (Input [i] % 2 == 0)
+		      {
+		      	Even [j] = Input [i];
+		      	j++;
+		      	evenlength++;
+		      	
+			  }
+		  else 
+		      {
+		      	Odd [k] = Input [i];
+		      	k++;
+		      	oddlength++;
+			  } 
+		
+	    }
+	
+	cout<<endl<<endl;    
+	cout<<"Even :";   
+	for (int i=0; i<evenlength; i++)
+	    {
+	    	cout<<Even[i]<<" ";
+	    	
+		}
+		
+	cout<<endl<<endl;
+	
+	cout<<"Odd :";
+	for (int i=0; i<oddlength; i++)
+	    {
+	    	cout<<Odd[i]<<" ";
+	    	
+		}
+}

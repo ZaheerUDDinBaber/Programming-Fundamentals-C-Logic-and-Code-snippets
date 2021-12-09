@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    double a,b,c,d,sum;
+   
+    
+    cout<<"Type Numbers To Make devide"<<endl;  
+  
+   
+    cin>>a;
+    cin>>b;
+    
+    a*=2;
+    b/=3;
+    c=b+5;
+    d=a+b+c+5;
+    
+    cout<<" a ="<<a<<endl;
+    cout<<" b ="<<b<<endl;
+    cout<<" c ="<<c<<endl;
+    cout<<" d ="<<d<<endl;
+    
+    
+    
+    sum=a+c+d;
+    
+    cout<<"  Sum"<<sum;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+		return 0;
+}

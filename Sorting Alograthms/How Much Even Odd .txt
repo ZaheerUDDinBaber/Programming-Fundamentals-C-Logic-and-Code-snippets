@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+
+   int Limit;
+   int Array[500];
+   int Search;
+   int count=0;
+   int count_2=0;
+   
+   
+   cout<<"Enter How Many Numbers You Want To Store : ";
+   cin>>Limit;
+   
+   for (int i=0; i<Limit; i++)
+   {
+   	 cout<<"Array "<<i<<" :";
+   	 cin>>Array[i];
+   }		
+   
+    for (int m=0; m<Limit; m++)
+     {
+        if (Array[m] % 2== 0) 
+         {
+	      count ++; 
+	     }
+	    
+	     if (Array[m] % 2!= 0) 
+        {
+	     count_2 ++;     
+        }
+    }
+    
+    
+    cout<<endl;
+    cout<<"Even Numbers :"<<count;
+    cout<<endl;
+    cout<<"Odd Numbers :"<<count_2<<endl;
+	    
+	
+	 
+	return 0;
+}

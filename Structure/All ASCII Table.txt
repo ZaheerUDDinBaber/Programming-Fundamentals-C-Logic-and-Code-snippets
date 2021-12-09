@@ -1,0 +1,23 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main ()
+{
+	char alpha;
+	cout<<"Ascii Table Of Big Alphabatics "<<endl;
+
+	for (char I='A'; I<='Z'; I++ )
+	cout<<I<<" is : "<<(int)I<<" |"<<endl; 
+	
+	
+	
+	
+	cout<<endl;
+	cout<<"----------------------------------------";
+	cout<<"Ascii Table Of Small Alphabatics "<<endl;
+
+	for (char m='a'; m<='z'; m++ )
+	cout<<m<<" is : "<<(int)m<<" | "<<endl;
+	
+	return 0;
+}

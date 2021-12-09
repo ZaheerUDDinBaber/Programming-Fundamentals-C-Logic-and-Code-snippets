@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+	
+	int s;
+	int q;
+	int ClassMarks [s] [q];
+	
+	cout<<"This Is A Progarame To Enter Numbers Of User Inputed Students And Quizes "<<endl<<endl;
+	
+    cout<<"Input Number OF Students"<<endl;
+    cin>>s;
+    
+    cout<<"Input Number Of Quizes  "<<endl;
+    cin>>q;
+	//rows students//
+     for(int i=1; i<=s; i++)
+    {
+	   //coulmbs quizes//
+        for (int j=1; j<=q; j++)
+        {
+        cout<<"Marks Of Student "<<i<<" For Quiz "<<j<<" :";
+        cin>>ClassMarks [i] [j];
+        }
+        cout<<" ******************************"<<endl<<endl;     
+    }
+    
+     cout<<"   Total Marks of " <<q<<" Quizzes         "<<endl<<endl;
+		
+	
+	 for (int i=1; i<=s; i++)
+		
+	{ 
+	     int sum=0;
+		 for (int j=1; j<=q; j++)
+		 {
+		 sum= sum + ClassMarks [i] [j];
+	     } 
+         cout<<"Student "<<i<<" Total Numbers = "<<sum<<endl; 
+    }
+	
+	
+
+	
+	
+	
+	
+	return 0;
+}

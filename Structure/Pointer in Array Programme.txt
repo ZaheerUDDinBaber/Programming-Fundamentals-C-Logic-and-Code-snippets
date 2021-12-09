@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+
+
+
+char a[100];
+char b[100];
+
+cout<<"Enter First Array :";
+gets (a);
+
+  char *ptr = a;
+  
+  int k=0;
+  while (ptr [k] != '\0')
+         {
+           	cout<<ptr[k];
+           	k++;
+	     }
+	     
+cout<<endl<<endl;
+cout<<"Enter Second Array :";	     
+gets (b);
+
+  char *ptr_2 = b;
+  
+  while (*ptr_2 != '\0')
+         {
+           	cout<<*ptr_2;
+           	ptr_2++;
+	     }
+
+
+
+
+}

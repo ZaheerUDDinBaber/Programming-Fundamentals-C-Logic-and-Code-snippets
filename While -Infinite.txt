@@ -1,0 +1,34 @@
+
+#include<iostream>
+using namespace std;
+int main ()
+    
+{
+
+
+int a;
+int i;
+
+
+cin>>i;
+while (i<=i)
+{
+
+cout<<i<<" Pakistan "<<endl;
+
+i++;
+
+}
+		
+
+    
+	return 0;
+	
+	
+	
+	
+	
+	
+	
+	
+}

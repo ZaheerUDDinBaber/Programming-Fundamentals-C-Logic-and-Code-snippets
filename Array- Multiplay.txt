@@ -1,0 +1,146 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+    int a[3][3];
+
+    int b[3][3];
+
+    int zaheer[3][3];
+
+    int i,j;
+
+    cout<<"Enter Data for Matrix A"<<endl;
+
+    for(i=1;i<=3;i++)
+
+    {
+
+        for(j=1;j<=3;j++)
+
+        {
+
+        cout<<"Enter value for "<<i<<" Row and "<<j<<" Column ";
+
+            cin>>a[i][j];
+
+        }
+
+        cout<<endl;
+
+    }
+
+    cout<<"Enter Data for Matrix B "<<endl;
+
+    for(i=1; i<=3; i++)
+
+    {
+
+        for(j=1; j<=3; j++)
+
+        {
+
+        cout<<"Enter value for "<<i<<" Row and "<<j<<" Column ";
+
+            cin>>b[i][j];
+
+        }
+
+        cout<<endl;
+
+    }
+
+    cout<<" Matrix A ";
+
+    cout<<endl;
+
+    cout<<endl;
+
+    for(i=1;i<=3;i++)
+
+    {
+
+        for(j=1;j<=3; j++)
+
+        {
+
+            cout<<"  "<<a[i][j];
+
+        }
+
+        cout<<endl;
+
+        cout<<endl;
+
+    }
+
+    cout<<"Matrix B";
+
+    cout<<endl;
+
+    cout<<endl;
+
+    for(i=1;i<=3;i++)
+
+    {
+
+        for(j=1;j<=3;j++)
+
+        {
+
+            cout<<" "<<b[i][j];
+
+        }
+        cout<<endl;
+
+    }
+    
+    //formula
+
+   zaheer[1][1]=(a[1][1]*b[1][1])+(a[1][2]*b[2][1])+(a[1][3]*b[3][1]);
+
+   zaheer[1][2]=(a[1][1]*b[1][2])+(a[1][2]*b[2][2])+(a[1][3]*b[3][2]);
+
+   zaheer[1][3]=(a[1][1]*b[1][3])+(a[1][2]*b[2][3])+(a[1][3]*b[3][3]);
+
+   zaheer[2][1]=(a[2][1]*b[1][1])+(a[2][2]*b[2][1])+(a[2][3]*b[3][1]);
+
+   zaheer[2][2]=(a[2][1]*b[1][2])+(a[2][2]*b[2][2])+(a[2][3]*b[3][2]);
+
+   zaheer[2][3]=(a[2][1]*b[1][3])+(a[2][3]*b[2][3])+(a[2][3]*b[3][3]);
+
+   zaheer[3][1]=(a[3][1]*b[1][1])+(a[3][2]*b[2][1])+(a[3][3]*b[3][1]);
+
+   zaheer[3][2]=(a[3][1]*b[1][2])+(a[3][2]*b[2][2])+(a[3][3]*b[3][2]);
+
+   zaheer[3][3]=(a[3][1]*b[1][3])+(a[3][3]*b[2][3])+(a[3][3]*b[3][3]);
+
+    cout<<" Multiplication of A-Matrix With B-Matrix ";
+
+    cout<<endl;
+
+    cout<<endl;
+
+    for(i=1;i<=3;i++)
+
+    {
+
+        for(j=1;j<=3;j++)
+
+        {
+
+            cout<<" " <<zaheer[i][j];
+
+        }
+
+        cout<<endl;
+
+    }
+
+    return 0;
+
+}

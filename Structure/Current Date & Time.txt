@@ -1,0 +1,44 @@
+#include <iostream>
+#include <ctime>
+#include <string>
+
+using namespace std;
+
+void System_Refreshing(char [], char[]);
+
+int main ()
+{
+  char date [10] = {0};
+  char time [10] = {0};
+  
+  System_Refreshing (date, time);
+  return 0;
+}
+
+void System_Refreshing(char date [] , char time [] )
+{
+	
+  _strdate(date);
+  cout<<"Current Date is: "<<date<<endl;
+  
+  _strtime(time);
+  cout<<"Current Time is: "<<time<<endl;
+  
+  
+  cout <<"Enter 'Yes' to refresing time again ! "<<endl; 
+  
+  string update;
+  cin >> update;
+  
+  if (update == "Yes" || update == "yes" || update == "y" || update == "Y" )
+      {
+      	system ("CLS");
+      	System_Refreshing(date, time);
+	  }
+  else 
+      {
+      	system ("CLS");
+         cout <<"Good Bye";	
+	  } 
+  
+}

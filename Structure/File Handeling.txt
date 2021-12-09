@@ -1,0 +1,17 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main ()
+{
+	
+	ofstream Zaheer;
+	Zaheer.open ("New File");
+	
+	Zaheer <<"Hello My Name IS New File & C++ Genrated Me "<<endl;
+	
+	Zaheer.close();
+	
+	cout<<"File Generated Check Directary "<<endl;
+	
+	return 0;
+}

@@ -1,0 +1,107 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+const double R_RENT_OF_SERVICE =7;
+const double R_FEE_FOR_PREMIUM_CHANNELS = 20;
+const double R_MAINTANCE_FEE = 10;
+
+
+const double B_FEE_FOR_PREMIUM_CHANNELS = 15;
+const double B_MAINTANCE_FEE = 20;
+const double B_SERVICE_FEE = 150;
+
+int main ()
+
+{
+	
+int FR,FB, AccountNo,PremiumChannels,MaintanceFee,ServiceFee;
+char Type;	
+	
+
+cout<<"This Is A Programme To Calculate Total Monthly Bill For A Regular & Bussiness Connection"<<endl<<endl;
+
+cout<<"Kindly Press R or r For Local Connection "<<endl;
+cout<<"Kindly Press B or b For Company Connection"<<endl;	
+	
+cout<<"--------------------------------------------------------------------------------------------------------------------------------------"<<endl;
+
+cout<<"Kindly Enter The Account No. First Of All"<<endl;
+
+cout<<"Account No. : "<<endl;
+cin>>AccountNo;
+
+cout<<"Kindly Press Relvent Key For Prominent Customer's Type "<<endl;
+cin>>Type;
+cout<<endl;
+
+switch (Type)
+{
+	case 'r':
+	case 'R':
+	
+	cout<<"Slected Type : Standard Local Connection "<<endl;
+	cout<<"Input No. Of Premium Channels"<<endl;
+	
+	cin>> PremiumChannels;
+	
+	cout<<"Input Mantance Charges "<<endl;
+	cin>>MaintanceFee;
+	
+	cout<<endl;
+	
+	FR=(PremiumChannels*R_FEE_FOR_PREMIUM_CHANNELS) + (MaintanceFee * R_MAINTANCE_FEE ) + (R_RENT_OF_SERVICE);
+	
+	cout<<"Total Bill : "<<FR<<"$"<<endl;
+	
+	break ;
+
+
+    case 'b':
+    case 'B':
+    
+	if (AccountNo<=10)
+
+
+	{
+			
+    cout<<"Slected Type : Elite Bussiness Connection- 10 OR Less Than 10 "<<endl;
+    cout<<"Input No. Of Premium Channels "<<endl;
+    
+    cin>>PremiumChannels;
+    cout<<"Input Mantance Charges"<<endl;
+    cin>>MaintanceFee;
+    cout<<endl;
+    
+    FB=(PremiumChannels*B_FEE_FOR_PREMIUM_CHANNELS) + (MaintanceFee*0)+( B_SERVICE_FEE*0);
+    cout<<FB<<"$"<<endl;
+ }
+ 
+        
+	else 
+	
+{
+						
+    cout<<"Slected Type : Standard Bussiness Connection "<<endl;
+    cout<<"Input No. Of Premium Channels "<<endl;
+    
+    cin>>PremiumChannels;
+    
+    cout<<"Input Mantance Charges "<<endl;
+    cin>>MaintanceFee;
+    
+    cout<<endl;
+
+    FB=(PremiumChannels*B_FEE_FOR_PREMIUM_CHANNELS) + (MaintanceFee*B_MAINTANCE_FEE) +( B_SERVICE_FEE );
+    cout<<FB<<"$"<<endl;
+
+}
+    break;
+  	
+}
+
+
+
+return 0;
+	
+}

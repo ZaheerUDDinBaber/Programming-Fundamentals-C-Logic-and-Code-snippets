@@ -1,0 +1,10 @@
+#include<time.h>
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	char date[9];
+	_strdate(date);
+	cout << date << endl;
+}

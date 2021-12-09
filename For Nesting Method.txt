@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main ()
+    
+{
+	int i,j,k;                                        /* 1st cout main 3 no chalyn gi
+	                                                 phr 2nd eek bar chasly gi and 3rd eek bar chaly gi
+	                                                 phr 2nd ka last no chaly ga and 3rd complete ho gi 
+													 phr 2nd ka next no chaly ga and 3rd again complete */ 
+	                                                                                                 
+	                                                                                                  
+    {
+    	for (i=1; i<=5; i++)
+    	for (j=1; j<=5;	j++)
+    	for (k=1; k<=10; k++)
+    	cout<<i<<j<<k<<endl;	
+    	
+	}  
+
+
+    
+	return 0;
+	
+	
+	
+	
+	
+	
+	
+	
+}
